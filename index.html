@@ -5,26 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="support-scrollsnap"></div>
 
     <div class="scroll-container">
       <div class="scroll-area">
-        <div class="parent">
-          <div class="child">텍스트 애니메이션</div>
+        <div class="jb-box">
+          <video muted autoplay loop>
+            <source src="engineer.mp4" type="video/mp4" />
+            <strong>Your browser does not support the video tag.</strong>
+          </video>
+          <div class="jb-text">
+            <div class="parent">
+              <div class="child">예향</div>
+            </div>
+            <div class="parent" style="margin-top: 100px">
+              <div class="child" style="font-size: 0.5em; font-weight: 100">
+                텍스트
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- <div class="wrap">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"
-            id="arrow"
-            class="animated bounce"
-          />
-        </div> -->
       </div>
-      <div class="scroll-area"></div>
-      <div class="scroll-area">3</div>
-      <div class="scroll-area">4</div>
+      <div class="scroll-area">
+        싱어
+        <div class="icons">
+          <i class="fi fi-rr-microphone-alt"></i>
+        </div>
+      </div>
+      <div class="scroll-area">
+        세션
+        <div class="icons">
+          <i class="fi fi-rr-piano-keyboard"></i
+          ><i class="fi fi-rr-guitar-electric"></i
+          ><i class="fi fi-rs-guitar"></i>
+        </div>
+      </div>
+      <div class="scroll-area">
+        엔지니어
+        <div class="icons">
+          <i class="fi fi-rs-dial-med-low"></i><i class="fi fi-rr-camera"></i
+          ><i class="fi fi-rs-laptop"></i>
+        </div>
+      </div>
+      <div class="scroll-area">5</div>
     </div>
   </body>
 </html>
