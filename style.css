@@ -1,0 +1,78 @@
+html {
+  background: #f2f2f2;
+}
+
+body {
+  margin: 0;
+}
+
+.scroll-container,
+.scroll-area {
+  max-width: 800px;
+  height: 100vh;
+  font-size: 60px;
+}
+
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-area {
+  scroll-snap-align: start;
+}
+
+.scroll-container,
+.scroll-area {
+  margin: 0;
+}
+
+.scroll-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-area:nth-of-type(1) {
+  background: #49b293;
+}
+
+.scroll-area:nth-of-type(2) {
+  background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+  background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+  background: #8360a6;
+}
+
+.parent {
+  height: 3em; /* 애니메이션 높이 */
+  overflow-y: hidden;
+  display: block;
+}
+
+.parent .child {
+  font-size: 1em; /* 애니메이션 높이 */
+  font-weight: bold;
+  line-height: 1;
+  animation-name: grow;
+  animation-duration: 1s; /* 애니메이션 시간 */
+}
+/* 키프레임 애니메이션 */
+@keyframes grow {
+  from {
+    transform: translateY(3em);
+  } /* 애니메이션 높이 */
+  to {
+    transform: translateY(0);
+  }
+}
