@@ -89,6 +89,15 @@ body {
     url("/engineer.jpg");
   background-size: cover;
   background-position: 40%;
+  text-align: center;
+}
+
+.scroll-area:nth-of-type(5) {
+  background-color: rgb(145, 111, 138);
+}
+
+.scroll-area:nth-of-type(6) {
+  background-color: rgb(114, 124, 163);
 }
 
 .parent {
@@ -120,6 +129,11 @@ body {
   to {
     transform: translateY(0);
   }
+}
+
+iframe {
+  width: 80%;
+  height: auto;
 }
 
 .wrap {
@@ -189,6 +203,23 @@ img {
 
 i {
   margin: 30%;
+}
+
+button {
+  margin-top: 200px;
+  width: 70%;
+  height: 8%;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 0.3em;
+}
+
+button:hover {
+  border: 1px solid white;
+  background-color: rgb(114, 124, 163);
+  color: white;
+  font-size: 0.3em;
 }
 
 @media (max-width: 800px) {
